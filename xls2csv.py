@@ -72,7 +72,7 @@ def converttocsv(fname, delimiter=','):
         # Nested loops allow us to navigate the 2D array of cells
         for curRow in range(worksheet.nrows):
             for curCol in range(worksheet.ncols):
-                # Generate a single line of output with a ; delimiter
+                # Generate a single line of output with a delimiter
                 line += unicode(worksheet.cell(curRow, curCol).value) + delimiter
             # Encode line to UTF-8 then write to file
             fh.write((line + "\n").encode("utf8"))
