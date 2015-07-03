@@ -1,3 +1,11 @@
+# Program     : xls2csv.py
+# Author      : Ryan Carr
+# Created     : 03/07/15
+# Description : Program opens an Excel worksheet and converts it
+#               to a comma delimited file. Menu driven system
+#               requires .xls or .xlsx files to be in the same
+#               folder as the .py file.
+
 from xlrd import open_workbook
 from os import getcwd, listdir
 from os.path import isfile
