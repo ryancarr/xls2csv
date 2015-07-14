@@ -11,7 +11,7 @@ from os import getcwd, listdir
 from os.path import isfile
 
 def askquestion(question):
-    ''' askquestion(quesiton) -> string
+    ''' askquestion(question) -> string
 
         Waits for user input based on question parameter
         Questions should be yes or no format
