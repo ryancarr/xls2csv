@@ -126,6 +126,9 @@ def main():
     cont = True
     while cont:
         files = getfiles()
+        if not files:
+            print 'There aren\'t any .xls files in ' + getcwd()
+            break
         intro = 'This program converts files from .xls or .xlsx to .csv'
         fname = displaymenu(intro, files)
         converttocsv(fname)
